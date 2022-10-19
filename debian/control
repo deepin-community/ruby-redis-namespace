@@ -1,0 +1,30 @@
+Source: ruby-redis-namespace
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               gem2deb,
+               procps,
+               redis-server,
+               ruby-redis (>= 3.0.4),
+               ruby-rspec,
+               ruby-rspec-its
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-redis-namespace.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-redis-namespace
+Homepage: https://github.com/resque/redis-namespace
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-redis-namespace
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${ruby:Depends},
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Namespaces commands when multiple apps access same redis server
+ Adds a Redis::Namespace class which can be used to namespace calls
+ to Redis. This is useful when using a single instance of Redis with
+ multiple, different applications.

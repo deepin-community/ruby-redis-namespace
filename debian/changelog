@@ -1,0 +1,88 @@
+ruby-redis-namespace (1.8.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Update standards version to 4.5.0, no changes needed.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Cédric Boutillier ]
+  * Update team name
+  * Add .gitattributes to keep unwanted files out of the source package
+
+  [ Debian Janitor ]
+  * Update watch file format version to 4.
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ Sruthi Chandran ]
+  * New upstream version 1.8.1
+  * Bump Standards-Version to 4.6.0 (no changes needed)
+
+ -- Sruthi Chandran <srud@debian.org>  Mon, 20 Sep 2021 01:11:19 +0530
+
+ruby-redis-namespace (1.7.0-1) unstable; urgency=medium
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Pirate Praveen ]
+  * New upstream version 1.7.0 (Closes: #945210)
+  * Bump Standards-Version to 4.4.1 (no changes needed)
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+  * Refresh patches (remove patches applied upstream)
+  * Add testsuite field and run dependency check during build
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 08 Jan 2020 15:16:24 +0530
+
+ruby-redis-namespace (1.6.0-1) unstable; urgency=medium
+
+  * Team Upload
+  * New upstream release
+  * Refresh patches
+  * Bump debhelper compat to 11
+  * Bump Standards-Version to 4.2.1
+  * d/control:
+    - Update Vcs-* fields, point to Salsa.
+  * d/control, d/copyright: Use https in format and homepage fields.
+
+ -- Sagar Ippalpalli <i.vikram15@gmail.com>  Wed, 19 Sep 2018 07:46:26 +0530
+
+ruby-redis-namespace (1.5.2-3) unstable; urgency=medium
+
+  * Team upload
+  * Upload to unstable
+  * Fix fix-tests-support-rspec3 patch to solve FTBFS (Closes: #808435)
+  * Bump debhelper compatibility
+
+ -- Balasankar C <balasankarc@autistici.org>  Mon, 21 Dec 2015 13:04:59 +0530
+
+ruby-redis-namespace (1.5.2-2) experimental; urgency=medium
+
+  * Team upload.
+  * Make tests require rspec-its and add it to build deps
+  * Port tests to RSpec3 syntax (Closes: #794359)
+
+ -- Balasankar C <balasankarc@autistici.org>  Wed, 02 Sep 2015 17:34:17 +0530
+
+ruby-redis-namespace (1.5.2-1) experimental; urgency=medium
+
+  * New upstream release
+  * Drop patch loosen-redis-dependency.patch (merged upstream)
+  * Tighten dependency for >= 3.0.4, ~> 3.0 requirement
+  * Disable tests, needs posting to rspec3
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 06 Aug 2015 22:35:18 +0530
+
+ruby-redis-namespace (1.4.1-2) unstable; urgency=medium
+
+  * loosen redis dependency to ~> 3.0
+  * bump standards version to 3.9.6 (no changes).
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 21 Nov 2014 18:19:19 +0530
+
+ruby-redis-namespace (1.4.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #748937)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 22 May 2014 17:32:30 +0530

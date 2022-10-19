@@ -1,0 +1,2 @@
+version=4
+https://gemwatch.debian.net/redis-namespace .*/redis-namespace-(.*).tar.gz
